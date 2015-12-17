@@ -146,7 +146,7 @@ def decide(input_file, countries_file):
         else:
             result.append("Reject")
 
-    print result
+   
     return result
 
 """Call all information check methods"""
