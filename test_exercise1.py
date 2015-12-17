@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 
 """ Assignment 3, Exercise 1, INF1340, Fall, 2015. DBMS
-
 Test module for exercise3.py
-
 """
 
 __author__ = 'Susan Sim'
@@ -32,6 +30,8 @@ R1 = [["Employee", "Department"],
 R2 = [["Department", "Head"],
       ["production", "Mori"],
       ["sales", "Brown"]]
+
+
 
 
 #####################
@@ -103,4 +103,19 @@ def test_cross_product():
               ["White", "production", "production", "Mori"],
               ["White", "production", "sales", "Brown"]]
 
+    shoul = [['Employee', 'Department', 'Department', 'Head'],
+             ['Smith', 'sales', 'production', 'Mori'],
+             ['Smith', 'sales', 'sales', 'Brown'],
+             ['Black', 'production', 'production', 'Mori'],
+             ['Black', 'production', 'sales', 'Brown'],
+             ['White', 'production', 'production', 'Mori'],
+             ['White', 'production', 'sales', 'Brown']]
+
     assert is_equal(result, cross_product(R1, R2))
+
+
+test_selection()
+
+test_projection()
+
+test_cross_product()

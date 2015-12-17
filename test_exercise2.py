@@ -11,7 +11,7 @@ __license__ = "MIT License"
 __status__ = "Prototype"
 
 # imports one per line
-import pytest
+"""import pytest"""
 import os
 from exercise2 import decide
 
@@ -26,3 +26,6 @@ def test_returning():
     assert decide("test_returning_citizen.json", "countries.json") ==\
         ["Accept", "Accept", "Quarantine"]
 
+
+
+test_returning()
